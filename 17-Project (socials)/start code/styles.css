@@ -132,8 +132,23 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.5px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
+.socials-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 8px;
+}
+
+@media(min-width: 768px) {
+  .socials-list {
+    gap: 24px;
+  }
+}
 .socials-item:nth-child(1) .social-link {
   background-color: var(--navy);
 }
